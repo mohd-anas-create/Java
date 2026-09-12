@@ -1,6 +1,6 @@
 package OOP;
 
-public class abstract Item {
+public class Item {
   private String name;
   private int quantity;
   private String type;
@@ -23,6 +23,8 @@ public class abstract Item {
     return type;
   }
 
- public abstract void displayInfo();
-  
+  @Override 
+  public String toString() {
+    return "name: " + name + " , quantity: " + quantity + " , type: " + type;
+  }
 }

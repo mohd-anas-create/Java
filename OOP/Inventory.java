@@ -13,11 +13,14 @@ public class Inventory {
   public void addItem(String name, int quantity, String type, int damage) {  //Method overloadin - Compile-time polymorphism
     items.add(new Weapon(name, quantity, type, damage));
   }
+   
+
   public void displayInventory() {
     for(Item item : items) {
-      item.displayInfo();
+      System.out.println(item.toString());
     }
+ 
   }
 
-  
 }
+

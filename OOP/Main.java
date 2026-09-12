@@ -5,7 +5,7 @@ class Main {
 
    Inventory inventory = new Inventory();
 
-  // Item item = new Item("stone", 64, "Block");
+  Item item = new Item("stone", 64, "Block");
 
    Fruit fruit = new Fruit("Apple", 20, "food", "healing");
 
